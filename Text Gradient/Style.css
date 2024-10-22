@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.contanier{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+h1{
+    font-size: 100px;
+    background: linear-gradient(45deg,rgb(39, 212, 212),#e409cf);
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    animation: 3s move infinite alternate;
+    font-family: 'Geologica';
+    font-weight: 1000;
+    font-style: normal;
+}
+@keyframes move{
+    0%{background-position: left;}
+    100%{background-position: right;}
+}
